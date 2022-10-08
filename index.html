@@ -17,9 +17,9 @@
     <header>
         <div class="header container ">
             <a class="header-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
-            <nav>
+            <nav class="menu">
                 <ul class="header-menu list">
-                    <li><a class="header-link link current" href="./index.html">Студія</a></li>
+                    <li><a class="header-link current link " href="./index.html">Студія</a></li>
                     <li><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
                     <li><a class="header-link link" href="">Контакти</a></li>
                 </ul>
@@ -41,11 +41,20 @@
             </ul>
         </div>
     </header>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close" data-modal-close>
+            <svg class="modal-icon-close">
+                <use href="./img/symbol-defs.svg#icon-close"> </use>
+            </svg>
+          </button>
+        </div>
+      </div>
     <main>
         <section class="header-hero section">
             <div class="container">
                 <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-                <button class="header-button" type="button">Замовити послугу</button>    
+                <button class="header-button" type="button" data-modal-open>Замовити послугу</button>    
             </div>
         </section>
         <section class="about section">
@@ -112,9 +121,24 @@
             <div class="container">
             <h2 class="gonna-do-title">Чим ми займаємося</h2>
             <ul class="gonna-do-photos list">
-                <li class="gonna-do-photo"><img src="img/img-task.jpg" alt="напрям1" width="370"></li>
-                <li class="gonna-do-photo"><img src="img/imgtask.jpg" alt="напрям2" width="370"></li>
-                <li class="gonna-do-photo"><img src="img/imgtask1.jpg" alt="напрям3" width="370"></li>
+                <li class="gonna-do-photo">
+                    <img src="img/img-task.jpg" alt="напрям1" width="370">
+                    <div class="img-title-container">
+                        <p class="img-title">Десктопні додатки</p>
+                    </div>
+                </li>
+                <li class="gonna-do-photo">
+                    <img src="img/imgtask.jpg" alt="напрям2" width="370">
+                    <div class="img-title-container">
+                        <p class="img-title">Мобільні додатки</p>
+                    </div>                
+                </li>
+                <li class="gonna-do-photo">
+                    <img src="img/imgtask1.jpg" alt="напрям3" width="370">
+                    <div class="img-title-container">
+                        <p class="img-title">Дизайнерські рішення</p>
+                    </div>                
+                </li>
             </ul>
             </div>
         </section>
@@ -394,6 +418,7 @@
        </div>
         </div>
       </footer>
+      <script src="./script/modal.js"></script>
 </body>
 
 </html>
