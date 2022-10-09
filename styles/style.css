@@ -143,6 +143,7 @@ button{
     padding: 32px 0;
     display: flex;
     align-items: center;
+    transition: color var(--transition-duration) var(--animation-timing-function);
 
 } 
 
@@ -297,9 +298,10 @@ button{
 .overlay-container{
     position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
     top:0;
     left: 0;
-    padding: 63px 24px;
     transform: translateY(100%);
     transition: transform  var(--transition-duration) var(--animation-timing-function);
 }
@@ -307,7 +309,8 @@ button{
     color: var(--second-font-color);
     font-size: 18px;
     line-height: 1.5;
-    display: inline-block;
+    display: block;
+    padding: 63px 24px;
 }
 
 .goods-list-item:hover .item-overlay .overlay-container{
@@ -450,6 +453,7 @@ button{
 }
 .team-social-icon{
     fill:currentColor; 
+    transition: color var(--transition-duration) var(--animation-timing-function);
 }
 
 .social-link:hover,
@@ -494,6 +498,7 @@ address{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
+    transition: color var(--transition-duration) var(--animation-timing-function);
     
 }
 .client-title{
@@ -576,6 +581,8 @@ color: var(--hover-color);
     min-width: 73px;
     padding: 6px 22px;
     white-space: nowrap;
+    transition: color var(--transition-duration) var(--animation-timing-function);
+
 }
 
 .btn:hover{
@@ -680,6 +687,7 @@ color: var(--hover-color);
     align-items: center;
     justify-content: center;
     background-color:var(--footer-links);
+    transition: color var(--transition-duration) var(--animation-timing-function);
 }
 
 .footer-link:hover,
