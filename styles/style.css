@@ -450,6 +450,9 @@ button{
     justify-content: center;
     color: #AFB1B8;
     background-color: var(--second-font-color);
+    transition: fill var(--transition-duration) var(--animation-timing-function),
+    background-color var(--transition-duration) var(--animation-timing-function);
+
 }
 .team-social-icon{
     fill:currentColor; 
@@ -498,7 +501,8 @@ address{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
-    transition: color var(--transition-duration) var(--animation-timing-function);
+    transition: fill var(--transition-duration) var(--animation-timing-function),
+    border-color var(--transition-duration) var(--animation-timing-function);
     
 }
 .client-title{
@@ -581,7 +585,8 @@ color: var(--hover-color);
     min-width: 73px;
     padding: 6px 22px;
     white-space: nowrap;
-    transition: color var(--transition-duration) var(--animation-timing-function);
+    transition: color var(--transition-duration) var(--animation-timing-function),
+    background-color var(--transition-duration) var(--animation-timing-function);
 
 }
 
