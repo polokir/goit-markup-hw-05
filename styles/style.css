@@ -106,8 +106,9 @@ button{
 }
 
 
-.header-link:hover{
-    color:var(--hover-color);
+.header-link:hover,
+.header-link:focus{
+    color:var(--hover-color);   
 }
 
 
@@ -278,7 +279,7 @@ button{
 }
 
 .backdrop{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -312,7 +313,8 @@ button{
     padding: 63px 24px;
 }
 
-.goods-list-item:hover .item-overlay .overlay-container{
+.goods-link:hover .item-overlay .overlay-container,
+.goods-link:focus .item-overlay .overlay-container{
     transform: translateY(0);
 }
 
@@ -327,6 +329,7 @@ button{
     height: 581px;
     width: 528px;
     background-color: var(--second-font-color);
+    border-radius: 4px;
 }
 .modal-icon-close{
     width: 11px;
@@ -342,6 +345,7 @@ button{
     justify-content: center;
     margin-right: 8px;
     margin-top: 8px;
+    background-color: inherit;
 }
 
 .gonna-do-title{
@@ -547,6 +551,8 @@ color: var(--hover-color);
     line-height: 1.7;
     font-weight: 400;
     font-style: normal;
+    transition: color var(--transition-duration) var(--animation-timing-function);
+
 }
 
 .portfolio{
@@ -610,6 +616,8 @@ color: var(--hover-color);
 }
 .goods-link{
     display: block;
+    transition: color var(--transition-duration) var(--animation-timing-function);
+
 }
 .goods-link:hover,
 .goods-link:focus{
