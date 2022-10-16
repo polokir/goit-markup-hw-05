@@ -285,6 +285,7 @@ button{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity  var(--transition-duration) var(--animation-timing-function);
 }
 .is-hidden{
     opacity: 0;
@@ -299,9 +300,10 @@ button{
     position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
     width: 100%;
-    height: 100%;
+    height: 295px;
     top:0;
     left: 0;
+   
     transform: translateY(100%);
     transition: transform  var(--transition-duration) var(--animation-timing-function);
 }
@@ -367,24 +369,19 @@ button{
     position: relative;
 }
 
-.img-title-container{
+.img-title{
+    text-transform: uppercase;
+    color: var(--second-font-color);
+    font-weight: 700;
+    line-height: 1.14; 
     display: flex;
     position: absolute;
     width: 370px;
     align-items: center;
     justify-content: center;
-    left: 0;
     bottom: 0;
-    right: 0;
     background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px 0;
-}
-
-.img-title{
-    text-transform: uppercase;
-    color: var(--second-font-color);
-    font-weight: 700;
-    line-height: 1.14;  
+    height: 70px; 
 }
 
 .team-card{
@@ -453,13 +450,12 @@ button{
     justify-content: center;
     color: #AFB1B8;
     background-color: var(--second-font-color);
-    transition: fill var(--transition-duration) var(--animation-timing-function),
+    transition: color var(--transition-duration) var(--animation-timing-function),
     background-color var(--transition-duration) var(--animation-timing-function);
 
 }
 .team-social-icon{
     fill:currentColor; 
-    transition: color var(--transition-duration) var(--animation-timing-function);
 }
 
 .social-link:hover,
@@ -504,7 +500,7 @@ address{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
-    transition: fill var(--transition-duration) var(--animation-timing-function),
+    transition: color var(--transition-duration) var(--animation-timing-function),
     border-color var(--transition-duration) var(--animation-timing-function);
     
 }
@@ -535,6 +531,9 @@ address{
     letter-spacing: 0.03em;
     font-style: normal;
 }
+.footer-curent{
+    transition: color var(--transition-duration) var(--animation-timing-function)
+}
 .footer-curent:hover{
 color: var(--hover-color);
 }
@@ -551,8 +550,6 @@ color: var(--hover-color);
     line-height: 1.7;
     font-weight: 400;
     font-style: normal;
-    transition: color var(--transition-duration) var(--animation-timing-function);
-
 }
 
 .portfolio{
@@ -591,7 +588,8 @@ color: var(--hover-color);
     padding: 6px 22px;
     white-space: nowrap;
     transition: color var(--transition-duration) var(--animation-timing-function),
-    background-color var(--transition-duration) var(--animation-timing-function);
+    background-color var(--transition-duration) var(--animation-timing-function),
+    box-shadow var(--transition-duration) var(--animation-timing-function);
 
 }
 
@@ -616,7 +614,7 @@ color: var(--hover-color);
 }
 .goods-link{
     display: block;
-    transition: color var(--transition-duration) var(--animation-timing-function);
+    transition: box-shadow var(--transition-duration) var(--animation-timing-function);
 
 }
 .goods-link:hover,
@@ -699,7 +697,7 @@ color: var(--hover-color);
     align-items: center;
     justify-content: center;
     background-color:var(--footer-links);
-    transition: color var(--transition-duration) var(--animation-timing-function);
+    transition: background-color var(--transition-duration) var(--animation-timing-function);
 }
 
 .footer-link:hover,
